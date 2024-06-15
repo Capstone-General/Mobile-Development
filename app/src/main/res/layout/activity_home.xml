@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeActivity">
+    tools:context=".ui.home.HomeActivity"
+    android:background="@color/white">
 
     <!-- Top greeting and search bar -->
     <TextView
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hai Naimplung,"
+        android:text="Hai Alif,"
         android:textSize="18sp"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,17 +96,13 @@
         android:layout_marginEnd="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toTopOf="@+id/popular_destinations_label" />
-
-    <!-- Destination Item 1 -->
-
-    <!-- Repeat for other destinations (Use RecyclerView for better performance in a real app) -->
-
-    <!-- Bottom Navigation -->
-
-
+        android:id="@+id/rvItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popular_destinations_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

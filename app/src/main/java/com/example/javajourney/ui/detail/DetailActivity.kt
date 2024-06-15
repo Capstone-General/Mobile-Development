@@ -1,4 +1,4 @@
-package com.example.javajourney.ui
+package com.example.javajourney.ui.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
