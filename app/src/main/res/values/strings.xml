@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">javaJourney</string>
+    <string name="places_name">Nama Wisata</string>
+    <string name="description">Deskripsi</string>
+</resources>
